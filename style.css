@@ -23,6 +23,8 @@ body {
 }
 .card-panel {
   margin-top: 10%;
+  width:90%;
+  height:90%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px 2px 8px -1px rgba(196, 201, 233, 0.92);
@@ -236,13 +238,13 @@ hr {
 }
 .add {
   float: right;
-  margin-right: 130px;
+  margin-right: 50%;
   bottom: 39px;
   position: relative;
   width: 200px;
   height: 40px;
   border: none;
-  border-radius: 1vw;
+  border-radius: 10px;
   color: white;
   font-weight: 700;
   cursor: pointer;
@@ -261,8 +263,8 @@ hr {
 }
 
 .add:hover {
-  transition: all 150ms linear;
-  opacity: 0.85;
+  transition: all 0.3s ease;
+   opacity: 0.85;
 }
 .button-icon {
   text-align: center;
