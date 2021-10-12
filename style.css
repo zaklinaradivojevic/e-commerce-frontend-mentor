@@ -175,7 +175,6 @@ hr {
   float: right;
   background-color: transparent;
   text-align: left;
-  z-index:-1;
   position:relative;
 }
 .title {
