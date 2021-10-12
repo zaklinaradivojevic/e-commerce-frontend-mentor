@@ -1,0 +1,342 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(223, 64%, 98%);
+  font-family: "Kumbh Sans", sans-serif;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100%;
+}
+.card-panel {
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 1px 2px 8px -1px rgba(196, 201, 233, 0.92);
+  overflow: hidden;
+  position: relative;
+}
+.nav {
+  top: 15px;
+  width: 390px;
+  height: 73px;
+  text-align: center;
+  margin-left: 220px;
+  display: flex;
+  position: absolute;
+  border-bottom: 3px transparent;
+  background-color: transparent;
+}
+.nav a {
+  padding: 14px;
+  text-decoration: none;
+  margin: 3px;
+  font-size: 20px;
+  display: block;
+  cursor: pointer;
+  color: hsl(220, 14%, 75%);
+}
+.nav a:hover {
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+.logo {
+  margin-top: 36px;
+  margin-left: 63px;
+  cursor: pointer;
+  position: inherit;
+}
+hr {
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 22px;
+  color: hsl(220, 14%, 75%);
+}
+.line-br {
+  color: hsl(220, 14%, 75%);
+  border-top: 1px solid hsl(220, 14%, 75%);
+}
+.nav-icons {
+  width: 120px;
+  height: 50px;
+  float: right;
+  position: absolute;
+  background-color: transparent;
+  right: 40px;
+  top: 30px;
+}
+.avatar {
+  width: 30px;
+  height: 30px;
+}
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+#cartCount {
+  font-size: 12px;
+  background: hsl(26, 100%, 55%);
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -10px;
+}
+.avatar:hover {
+  border: 3px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+.slide-panel {
+  width: 50%;
+  height: 550px;
+  float: left;
+  background-color: transparent;
+  text-align: center;
+  overflow: hidden;
+}
+.slider {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+}
+.slider {
+  top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 280px;
+  background-color: transparent;
+  margin-bottom: 110px;
+  border-radius: 10px;
+  position: relative;
+}
+#product-1,
+#product-2,
+#product-3,
+#product-4 {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  overflow: hidden;
+}
+.active{
+  border: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.7;
+}
+.img-slide {
+  width: 300px;
+  height: 280px;
+  border-radius: 10px;
+}
+
+.slides {
+  width: 300px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  left: 2px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  display:flex;
+}
+.slider-img {
+  width: 58px;
+  height: 58px;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.slider-img:hover ,.active{
+  border: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.7;
+}
+
+.card-desc {
+  width: 50%;
+  height: 550px;
+  float: right;
+  background-color: transparent;
+  text-align: left;
+  z-index:-1;
+  position:relative;
+}
+.title {
+  margin-top: 90px;
+  width: 250px;
+}
+.subtitle {
+  color: hsl(26, 100%, 55%);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card-title {
+  color: hsl(220, 13%, 13%);
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-weight: 900;
+}
+.desc-text {
+  width: 330px;
+  color: hsl(220, 14%, 75%);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.price {
+  width: 330px;
+  color: hsl(220, 14%, 75%);
+  display: flex;
+  background-color: hsl(223, 64%, 98%);
+}
+.current-price {
+  color: hsl(219, 9%, 45%);
+  font-size: 24px;
+  margin-top: 10px;
+}
+.percent {
+  color: hsl(26, 100%, 55%);
+  font-size: 18px;
+  margin: 15px;
+}
+.caret-price-items {
+  color: hsl(220, 14%, 75%);
+  font-size: 16px;
+}
+.counter {
+  width: 330px;
+  margin: 5px;
+  margin-top: 20px;
+  display: flex;
+  background-color: hsl(223, 64%, 98%);
+}
+.minus,
+.plus {
+  border: none;
+  margin: 6px;
+  background-color: transparent;
+}
+.counter-output {
+  margin: 5px;
+}
+.add {
+  float: right;
+  margin-right: 130px;
+  bottom: 39px;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 1vw;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    0deg,
+    hsl(26, 100%, 55%) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
+}
+
+.add:hover {
+  transition: all 150ms linear;
+  opacity: 0.85;
+}
+.button-icon {
+  text-align: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+#myModal{
+  display:none;
+   width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  z-index:1;
+  position:absolute;
+  background-color:hsl(0, 0%, 0%);
+  opacity:0.9;
+}
+.close{
+  color: hsl(26, 100%, 55%);
+  font-size:40px;
+  font-weight:700;
+  float:right;
+  margin-right:170px;
+   margin-top:50px;
+  cursor:pointer;
+}
+.modal-content{
+  width:400px;
+  height:480px;
+  float:right;
+  right:120px;
+ top:100px;
+background-color:transparent;
+  position:absolute;
+  border-radius:20px;
+}
+.modal-slide-panel {
+  width: 500px;
+  height: 480px;
+  float: right;
+  background-color: transparent;
+  text-align: center;
+  overflow: hidden;
+  border-radius:20px;
+}
+.modal-slider {
+  width: 400px;
+  text-align: center;
+  overflow: hidden;
+}
+.modal-slider {
+   right:5px;
+   top:10px;
+  width: 400px;
+  height: 280px;
+  background-color: transparent;
+  margin-bottom: 110px;
+  border-radius: 20px;
+   position:absolute;
+}
+.modal-slides {
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  margin: 0 auto;
+  bottom:30px;
+  left: 50px;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  display:flex;
+}
