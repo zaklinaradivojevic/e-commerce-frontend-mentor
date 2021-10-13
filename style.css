@@ -52,6 +52,7 @@ body {
   color: hsl(220, 14%, 75%);
 }
 .nav a:hover {
+  color:hsl(219, 9%, 45%);
   border-bottom: 3px solid hsl(26, 100%, 55%);
 }
 .logo {
@@ -164,11 +165,14 @@ hr {
   position: relative;
 }
 
-.slider-img:hover ,.active{
+.slider-img:hover{
   border: 3px solid hsl(26, 100%, 55%);
   opacity: 0.7;
 }
-
+.active{
+  border: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.7;
+}
 .card-desc {
   width: 50%;
   height: 550px;
@@ -281,10 +285,10 @@ hr {
   height: 100%;
   margin: 0;
   padding: 0;
-  z-index:1;
   position:absolute;
   background-color:hsl(0, 0%, 0%);
   opacity:0.9;
+  z-index:1;
 }
 .close{
   color: hsl(26, 100%, 55%);
@@ -318,6 +322,7 @@ background-color:transparent;
   width: 400px;
   text-align: center;
   overflow: hidden;
+  position:relative;
 }
 .modal-slider {
    right:5px;
@@ -328,6 +333,7 @@ background-color:transparent;
   margin-bottom: 110px;
   border-radius: 20px;
    position:absolute;
+   z-index:-1;
 }
 .modal-slides {
   width: 300px;
@@ -340,6 +346,7 @@ background-color:transparent;
   text-align: center;
   background-color: transparent;
   display:flex;
+  
 }
 #modal-product-1,
 #modal-product-2,
@@ -349,4 +356,39 @@ background-color:transparent;
   height: 280px;
   object-fit: cover;
   overflow: hidden;
+}
+.modal-img-slide {
+  width: 300px;
+  height: 280px;
+  border-radius: 10px;
+}
+.modal-slider-img {
+  width: 58px;
+  height: 58px;
+  margin: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.modal-slider-img:hover{
+  border: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.7;
+}
+.previous,.next{
+  background-color: white;
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+}
+.previous{
+  float:left;
+  margin-left:25%;
+  margin-top:25%;
+  z-index:1;
+}
+.next{
+   float:right;
+   margin-top:25%;
+   margin-right: 35px;
+  
 }
