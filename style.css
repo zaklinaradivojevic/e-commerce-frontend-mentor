@@ -392,3 +392,21 @@ background-color:transparent;
    margin-right: 35px;
   
 }
+.cart{
+  display: none;
+  width:45%;
+  height:250px;
+  background-color: white;
+  float:right;
+  right:5%;
+  z-index:1;
+  position:absolute;
+}
+.cart-title{
+  margin:10px;
+  border-bottom:1px solid hsl(220, 14%, 75%);
+}
+.cart-title h1{
+  font-size:18px;
+  color:hsl(220, 13%, 13%); 
+}

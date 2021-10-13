@@ -42,7 +42,7 @@
               src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true"
               alt="product2">
           </div>
-          <div id="modal-product-3"class="modal-produkt-slider">
+          <div id="modal-product-3" class="modal-produkt-slider">
             <img class="modal-img-slide" onclick="currentSlide(3)"
               src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true"
               alt="product3">
@@ -101,7 +101,7 @@
       </div>
       <div class="nav-icons">
         <a href="#">
-          <img class="shoping-icon"
+          <img class="shoping-icon" onclick="openCart()" ondblclick="closeCart()"
             src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-cart.svg"
             alt="shoping-icon">
         </a>
@@ -116,7 +116,15 @@
       <div class="line">
         <hr class="line-br">
       </div>
+      <!----------------Cart Modal----------------------------->
+      <div class="cart" id="shopingCart">
+        <div class="cart-title">
+          <h1>Cart</h1>
+          <div id="card-product">
 
+          </div>
+        </div>
+      </div>
       <div class="slide-panel">
         <div class="slider">
           <div id="product-1">
