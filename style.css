@@ -985,6 +985,10 @@ hr {
       rgba(251, 75, 2, 1) 100%
     );
   }
+  .cart{
+    width:90%;
+    height:190px;
+  }
 }
 @media screen and (max-width: 376px) {
   body {
