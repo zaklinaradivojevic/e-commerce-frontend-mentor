@@ -24,59 +24,39 @@
     <div class="modal-content">
       <div class="modal-slide-panel">
         <div class="modal-navigation">
-          <img class="previous" id="previous" onclick="plusSlides(-1)"
-            src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-previous.svg"
-            alt="previous">
-          <img class="next" id="next" onclick="plusSlides(1)"
-            src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-next.svg"
-            alt="next">
+          <img class="previous" id="previous" onclick="plusSlides(-1)" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-previous.svg" alt="previous">
+          <img class="next" id="next" onclick="plusSlides(1)" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-next.svg" alt="next">
         </div>
         <div class="modal-slider">
           <div id="modal-product-1" class="modal-produkt-slider">
-            <img class="modal-img-slide" onclick="currentSlide(1)"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true"
-              alt="product1">
+            <img class="modal-img-slide" onclick="currentSlide(1)" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="product1">
           </div>
           <div id="modal-product-2" class="modal-produkt-slider">
-            <img class="modal-img-slide" onclick="currentSlide(2)"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true"
-              alt="product2">
+            <img class="modal-img-slide" onclick="currentSlide(2)" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true" alt="product2">
           </div>
           <div id="modal-product-3" class="modal-produkt-slider">
-            <img class="modal-img-slide" onclick="currentSlide(3)"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true"
-              alt="product3">
+            <img class="modal-img-slide" onclick="currentSlide(3)" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true" alt="product3">
           </div>
           <div id="modal-product-4" class="modal-produkt-slider">
-            <img class="modal-img-slide" onclick="currentSlide(4)"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true"
-              alt="producy4">
+            <img class="modal-img-slide" onclick="currentSlide(4)" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true" alt="producy4">
           </div>
         </div>
         <div class="modal-slides" id="modal-slides">
 
           <a href="#modal-product-1" id="a-img1" class="modalSliderImg">
-            <img class="modal-slider-img" id="img1"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true"
-              alt="product-1">
+            <img class="modal-slider-img" id="img1" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="product-1">
           </a>
 
           <a href="#modal-product-2" id="a-img2" class="modalSliderImg">
-            <img class="modal-slider-img" id="img2"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true"
-              alt="product-2">
+            <img class="modal-slider-img" id="img2" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true" alt="product-2">
           </a>
 
           <a href="#modal-product-3" id="a-img3" class="modalSliderImg">
-            <img class="modal-slider-img" id="img3"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true"
-              alt="product-3">
+            <img class="modal-slider-img" id="img3" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true" alt="product-3">
           </a>
 
           <a href="#modal-product-4" id="a-img4" class="modalSliderImg">
-            <img class="modal-slider-img" id="img4"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true"
-              alt="product-4">
+            <img class="modal-slider-img" id="img4" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true" alt="product-4">
           </a>
         </div>
       </div>
@@ -85,12 +65,24 @@
   </div>
 
   <main>
-    <div class="card-panel">
+    <div class="card-panel" id="card-panel">
+      <div class="menu-content" id="mobileMenu">
+        <div class="menu-nav">
+          <img class="close-menu" onclick="closeMenu()" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/2319bc8b33c5278a4309cfecd662b6da717b3af8/images/icon-close.svg" alt="close-icon">
+          <a href="#">Collections</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <img id="menu" class="menu" onclick="openMenu()" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/2319bc8b33c5278a4309cfecd662b6da717b3af8/images/icon-menu.svg" alt="menu-icon">
+      </div>
+
       <div class="logo-img">
         <a href="#">
-          <img class="logo"
-            src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/logo.svg"
-            alt="logo">
+          <img class="logo" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/logo.svg" alt="logo">
         </a>
       </div>
       <div class="nav">
@@ -101,77 +93,88 @@
       </div>
       <div class="nav-icons">
         <a href="#">
-          <img class="shoping-icon" onclick="openCart()" ondblclick="closeCart()"
-            src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-cart.svg"
-            alt="shoping-icon">
+          <img class="shoping-icon" onclick="openCart()" ondblclick="closeCart()" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-cart.svg" alt="shoping-icon">
         </a>
         <span class='badge badge-warning' id='cartCount'> 0 </span>
 
         <a href="#">
-          <img class="avatar"
-            src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-avatar.png?raw=true "
-            alt="avatar-icon">
+          <img class="avatar" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-avatar.png?raw=true " alt="avatar-icon">
         </a>
       </div>
       <div class="line">
         <hr class="line-br">
       </div>
       <!----------------Cart Modal----------------------------->
-      <div class="cart" id="shopingCart">
+      <div class="cart" id="cart">
         <div class="cart-title">
           <h1>Cart</h1>
-          <div id="card-product">
-
-          </div>
         </div>
+        <div id="cartEmpty">
+          <p>Your cart is empty.</p>
+        </div>
+        <div class="fullCart" id="full">
+          <img class="cartProduct" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="produkt">
+          <div class="cartDesc">
+            <p class="cartdesc">Fall Limited Edition Sneakers </p>
+            <p class="cartPrice">$125.00</p>
+            <p id="counterNumb"></p>
+            <p id="total">$</p>
+            <img onclick="deleteCart()" class="delete" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/2319bc8b33c5278a4309cfecd662b6da717b3af8/images/icon-delete.svg" alt="delite">
+          </div>
+          <button class="checkout">Checkout</button>
+        </div>
+
       </div>
       <div class="slide-panel">
+        <div class="mobile-navigation">
+          <img class="mobile-previous" id="previous" onclick="nextSlide(-1)" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-previous.svg" alt="previous">
+          <img class="mobile-next" id="next" onclick="nextSlide(1)" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/5513741c3d04a2853c3d581733f8601275574d61/images/icon-next.svg" alt="next">
+        </div>
+        <div class="mobile-slider">
+          <div id="product-1" class="imgSlider">
+            <img class="mobile-img-slide" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="product1">
+          </div>
+          <div id="product-2" class="imgSlider">
+            <img class="mobile-img-slide" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true" alt="product2">
+          </div>
+          <div id="product-3" class="imgSlider">
+            <img class="mobile-img-slide" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true" alt="product3">
+          </div>
+          <div id="product-4" class="imgSlider">
+            <img class="mobile-img-slide" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true" alt="producy4">
+          </div>
+        </div>
+
         <div class="slider">
-          <div id="product-1">
-            <img class="img-slide" onclick="openModal()"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true"
-              alt="product1">
+          <div id="product1">
+            <img class="img-slide" onclick="openModal()" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="product1">
           </div>
-          <div id="product-2">
-            <img class="img-slide" onclick="openModal()"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true"
-              alt="product2">
+          <div id="product2">
+            <img class="img-slide" onclick="openModal()" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true" alt="product2">
           </div>
-          <div id="product-3">
-            <img class="img-slide" onclick="openModal()"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true"
-              alt="product3">
+          <div id="product3">
+            <img class="img-slide" onclick="openModal()" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true" alt="product3">
           </div>
-          <div id="product-4">
-            <img class="img-slide" onclick="openModal()"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true"
-              alt="producy4">
+          <div id="product4">
+            <img class="img-slide" onclick="openModal()" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true" alt="producy4">
           </div>
         </div>
         <div class="slides" id="slides">
 
-          <a href="#product-1" id="a-img1" class="sliderImg">
-            <img class="slider-img  active" id="img1"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true"
-              alt="product-1">
+          <a href="#product1" id="a-img1" class="sliderImg">
+            <img class="slider-img  active" id="img1" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-1-thumbnail.jpg?raw=true" alt="product-1">
           </a>
 
-          <a href="#product-2" id="a-img2" class="sliderImg">
-            <img class="slider-img" id="img2"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true"
-              alt="product-2">
+          <a href="#product2" id="a-img2" class="sliderImg">
+            <img class="slider-img" id="img2" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-2-thumbnail.jpg?raw=true" alt="product-2">
           </a>
 
-          <a href="#product-3" id="a-img3" class="sliderImg">
-            <img class="slider-img" id="img3"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true"
-              alt="product-3">
+          <a href="#product3" id="a-img3" class="sliderImg">
+            <img class="slider-img" id="img3" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-3-thumbnail.jpg?raw=true" alt="product-3">
           </a>
 
-          <a href="#product-4" id="a-img4" class="sliderImg">
-            <img class="slider-img" id="img4"
-              src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true"
-              alt="product-4">
+          <a href="#product4" id="a-img4" class="sliderImg">
+            <img class="slider-img" id="img4" src="https://github.com/zaklinaradivojevic/e-commerce-frontend-mentor/blob/main/images/image-product-4-thumbnail.jpg?raw=true" alt="product-4">
           </a>
         </div>
       </div>
@@ -193,22 +196,18 @@
         </div>
         <h4 class="caret-price-items">$250.00</h4>
         <div class="counter">
-          <button class="minus">
-            <img
-              src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-minus.svg"
-              alt="minus">
+          <button class="minus" onclick=" add_to_counter(-1)">
+            <img src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-minus.svg" alt="minus">
           </button>
-          <p class="counter-outout">0</p>
-          <button class="plus">
-            <img
-              src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-plus.svg"
-              alt="plus">
+          <div class="counter-output">
+            <p id="output">0</p>
+          </div>
+          <button class="plus" onclick="add_to_counter(1)">
+            <img src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-plus.svg" alt="plus">
           </button>
         </div>
-        <button class="add">
-          <img class="button-icon"
-            src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-cart.svg"
-            alt="shoping-icon">
+        <button class="add" id="cart-btn" onclick="addToCart()">
+          <img class="button-icon" src="https://raw.githubusercontent.com/zaklinaradivojevic/e-commerce-frontend-mentor/670821a9c36c207b7e766b3a05ba745c286a9b62/images/icon-cart.svg" alt="shoping-icon">
           Add to cart
         </button>
       </div>

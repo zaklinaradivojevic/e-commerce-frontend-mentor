@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -23,13 +24,58 @@ body {
 }
 .card-panel {
   margin-top: 10%;
-  width:90%;
-  height:90%;
+  width: 90%;
+  height: 90%;
   margin-left: auto;
   margin-right: auto;
   box-shadow: 1px 2px 8px -1px rgba(196, 201, 233, 0.92);
   overflow: hidden;
   position: relative;
+}
+.menu {
+  display: none;
+}
+.menu-content {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 6;
+  position: absolute;
+  display: none;
+}
+.menu-nav {
+  padding: 0;
+  margin: 0;
+  top: 0;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+}
+.menu-nav a {
+  top: 10%;
+  left: 15%;
+  padding: 16px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  z-index: 1;
+  width: 70%;
+  display: flex;
+  position: relative;
+}
+.menu-nav a:hover {
+  color: dimgray;
+}
+.close-menu {
+  top: 40px;
+  left: 40px;
+  position: absolute;
 }
 .nav {
   top: 15px;
@@ -52,7 +98,7 @@ body {
   color: hsl(220, 14%, 75%);
 }
 .nav a:hover {
-  color:hsl(219, 9%, 45%);
+  color: hsl(219, 9%, 45%);
   border-bottom: 3px solid hsl(26, 100%, 55%);
 }
 .logo {
@@ -103,6 +149,15 @@ hr {
   border: 3px solid hsl(26, 100%, 55%);
   border-radius: 50%;
 }
+.mobile-navigation {
+  display: none;
+}
+.mobile-slider {
+  display: none;
+}
+.mobile-img-slide {
+  display: none;
+}
 .slide-panel {
   width: 50%;
   height: 550px;
@@ -136,7 +191,7 @@ hr {
   object-fit: cover;
   overflow: hidden;
 }
-.active{
+.active {
   border: 3px solid hsl(26, 100%, 55%);
   opacity: 0.7;
 }
@@ -155,7 +210,7 @@ hr {
   cursor: pointer;
   text-align: center;
   background-color: transparent;
-  display:flex;
+  display: flex;
 }
 .slider-img {
   width: 58px;
@@ -165,10 +220,10 @@ hr {
   position: relative;
 }
 
-.slider-img:hover{
+.slider-img:hover {
   opacity: 0.7;
 }
-.active{
+.active {
   border: 3px solid hsl(26, 100%, 55%);
   opacity: 0.7;
 }
@@ -178,7 +233,7 @@ hr {
   float: right;
   background-color: transparent;
   text-align: left;
-  position:relative;
+  position: relative;
 }
 .title {
   margin-top: 90px;
@@ -221,6 +276,7 @@ hr {
 .caret-price-items {
   color: hsl(220, 14%, 75%);
   font-size: 16px;
+  text-decoration: line-through;
 }
 .counter {
   width: 330px;
@@ -266,7 +322,7 @@ hr {
 
 .add:hover {
   transition: all 0.3s ease;
-   opacity: 0.85;
+  opacity: 0.85;
 }
 .button-icon {
   text-align: center;
@@ -278,35 +334,35 @@ hr {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-#myModal{
-  display:none;
-   width: 100%;
+#myModal {
+  display: none;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  position:absolute;
-  background-color:hsl(0, 0%, 0%);
-  opacity:0.9;
-  z-index:1;
+  position: absolute;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.9;
+  z-index: 1;
 }
-.close{
+.close {
   color: hsl(26, 100%, 55%);
-  font-size:40px;
-  font-weight:700;
-  float:right;
-  margin-right:170px;
-   margin-top:50px;
-  cursor:pointer;
+  font-size: 40px;
+  font-weight: 700;
+  float: right;
+  margin-right: 170px;
+  margin-top: 50px;
+  cursor: pointer;
 }
-.modal-content{
-  width:400px;
-  height:480px;
-  float:right;
-  right:120px;
- top:100px;
-background-color:transparent;
-  position:absolute;
-  border-radius:20px;
+.modal-content {
+  width: 400px;
+  height: 480px;
+  float: right;
+  right: 120px;
+  top: 100px;
+  background-color: transparent;
+  position: absolute;
+  border-radius: 20px;
 }
 .modal-slide-panel {
   width: 500px;
@@ -315,37 +371,36 @@ background-color:transparent;
   background-color: transparent;
   text-align: center;
   overflow: hidden;
-  border-radius:20px;
+  border-radius: 20px;
 }
 .modal-slider {
   width: 400px;
   text-align: center;
   overflow: hidden;
-  position:relative;
+  position: relative;
 }
 .modal-slider {
-   right:5px;
-   top:10px;
+  right: 5px;
+  top: 10px;
   width: 400px;
   height: 280px;
   background-color: transparent;
   margin-bottom: 110px;
   border-radius: 20px;
-   position:absolute;
-   z-index:-1;
+  position: absolute;
+  z-index: -1;
 }
 .modal-slides {
   width: 300px;
   height: 80px;
   position: absolute;
   margin: 0 auto;
-  bottom:30px;
+  bottom: 30px;
   left: 50px;
   cursor: pointer;
   text-align: center;
   background-color: transparent;
-  display:flex;
-  
+  display: flex;
 }
 #modal-product-1,
 #modal-product-2,
@@ -369,58 +424,570 @@ background-color:transparent;
   position: relative;
 }
 
-.modal-slider-img:hover{
+.modal-slider-img:hover {
   opacity: 0.7;
 }
-.previous,.next{
+.previous,
+.next {
   background-color: white;
   border-radius: 50%;
-  width:30px;
-  height:30px;
+  width: 30px;
+  height: 30px;
 }
-.previous{
-  float:left;
-  margin-left:25%;
-  margin-top:25%;
-  z-index:1;
+.previous {
+  float: left;
+  margin-left: 25%;
+  margin-top: 25%;
+  z-index: 1;
 }
-.next{
-   float:right;
-   margin-top:25%;
-   margin-right: 35px;
-  
+.next {
+  float: right;
+  margin-top: 25%;
+  margin-right: 35px;
 }
-.cart{
-  display: none;
-  width:45%;
-  height:250px;
+.cart {
+  width: 45%;
+  height: 200px;
   background-color: white;
-  float:right;
-  right:5%;
-  z-index:1;
-  position:absolute;
+  float: right;
+  right: 5%;
+  z-index: 1;
+  position: absolute;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 10px;
+  display: none;
 }
-.cart-title{
-  margin:10px;
-  border-bottom:1px solid hsl(220, 14%, 75%);
+
+.cart-title {
+  background-color: transparent;
+  width: 100%;
+  height: 50px;
+  top: 20px;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
 }
-.cart-title h1{
-  font-size:18px;
-  color:hsl(220, 13%, 13%); 
+.cart-title h1 {
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  font-size: 16px;
+  color: hsl(220, 13%, 13%);
+
+  position: relative;
+}
+#cartEmpty {
+  margin-top: 40px;
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  height: 10%;
+  background-color: transparent;
+  position: absolute;
+  text-align: center;
+}
+#cartEmpty p {
+  top: 50px;
+}
+.fullCart {
+  width: 100%;
+  height: 250px;
+  display: none;
+}
+.cartProduct {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+}
+.cartDesc {
+  display: flex;
+}
+.cartdesc {
+  top: 60px;
+  left: 60px;
+  font-size: 13px;
+  position: absolute;
+}
+.cartPrice {
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
+  font-weight: bold;
+  top: 80px;
+  left: 60px;
+  position: absolute;
+}
+#counterNumb {
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
+  font-weight: bold;
+  top: 80px;
+  left: 130px;
+  position: absolute;
+}
+#total {
+  color: hsl(219, 9%, 45%);
+  font-size: 18px;
+  font-weight: bold;
+  top: 80px;
+  left: 170px;
+  position: absolute;
+}
+.delete {
+  font-size: 18px;
+  font-weight: bold;
+  top: 80px;
+  left: 260px;
+  position: absolute;
+}
+.checkout {
+  top: 29px;
+  left: 15%;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(
+    0deg,
+    hsl(26, 100%, 55%) 0%,
+    rgba(251, 75, 2, 1) 100%
+  );
 }
 @media screen and (max-width: 992px) {
   body {
-    width:100%;
-    }
+    width: 100%;
+  }
+  .add {
+    float: right;
+    margin-right: 30%;
+    bottom: 39px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
+}
+@media screen and (max-width: 850px) {
+  body {
+    width: 100%;
+  }
+
+  .nav a {
+    padding: 16px;
+    text-decoration: none;
+    margin: 1px;
+    font-size: 18px;
+    display: block;
+    cursor: pointer;
+    color: hsl(220, 14%, 75%);
+  }
+
+  .nav-icons {
+    width: 120px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    background-color: transparent;
+    right: 20px;
+    top: 30px;
+  }
+  .add {
+    float: right;
+    margin-right: 25%;
+    bottom: 39px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    width: 100%;
+  }
+
+  .nav a {
+    padding: 18px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    cursor: pointer;
+    color: hsl(220, 14%, 75%);
+  }
+
+  .nav-icons {
+    width: 120px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    background-color: transparent;
+    right: 15px;
+    top: 30px;
+  }
+  .desc-text {
+    width: 300px;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .add {
+    float: right;
+    margin-right: 18%;
+    bottom: 39px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
+}
+@media screen and (max-width: 780px) {
+  body {
+    width: 100%;
+  }
+
+  .nav a {
+    padding: 18px;
+    text-decoration: none;
+    font-size: 13px;
+    display: block;
+    cursor: pointer;
+    color: hsl(220, 14%, 75%);
+  }
+
+  .nav-icons {
+    width: 110px;
+    height: 50px;
+    float: right;
+    position: absolute;
+    background-color: transparent;
+    right: 3px;
+    top: 30px;
+  }
+}
+@media screen and (max-width: 720px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    top: 15px;
+    width: 390px;
+    height: 73px;
+    text-align: center;
+    margin-left: 200px;
+    display: flex;
+    position: absolute;
+    border-bottom: 3px transparent;
+    background-color: transparent;
+  }
+  .add {
+    float: right;
+    margin-right: 14%;
+    bottom: 39px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
+}
+@media screen and (max-width: 695px) {
+  body {
+    width: 100%;
+  }
+  .nav {
+    top: 15px;
+    width: 330px;
+    height: 73px;
+    text-align: center;
+    margin-left: 190px;
+    display: flex;
+    position: absolute;
+    border-bottom: 3px transparent;
+    background-color: transparent;
+  }
+  .add {
+    float: right;
+    margin-right: 14%;
+    bottom: 39px;
+    position: relative;
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 685px) {
   body {
-    width:100%;
-     }
+    width: 100%;
+  }
+  .nav {
+    display: none;
+  }
+  .logo {
+    top: 0px;
+    margin-left: 83px;
+    position: absolute;
+  }
+  hr {
+    display: none;
+  }
+  .menu {
+    display: block;
+    margin-top: 39px;
+    margin-left: 10%;
+    cursor: pointer;
+  }
+  .slide-panel {
+    width: 100%;
+    height: 350px;
+    background-color: transparent;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .mobile-navigation {
+    display: block;
+    top: 55%;
+    z-index: 1;
+  }
+  .mobile-previous {
+    float: left;
+    top: 55%;
+    left: 10%;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  .mobile-next {
+    float: right;
+    top: 55%;
+    right: 10%;
+    z-index: 1;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  .mobile-slider {
+    top: 30px;
+    width: 100%;
+    height: 450px;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    display: block;
+  }
+  #product-1,
+  #product-2,
+  #product-3,
+  #product-4 {
+    width: 100%;
+    height: 450px;
+  }
+  .mobile-img-slide {
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
+  .slider {
+    display: none;
+  }
+  .img-slide {
+    display: none;
+  }
+  .slides {
+    display: none;
+  }
+  .card-desc {
+    width: 90%;
+    height: 550px;
+    background-color: transparent;
+    text-align: left;
+    position: relative;
+  }
+  .title {
+    margin-top: 20px;
+    width: 250px;
+  }
+  .subtitle {
+    color: hsl(26, 100%, 55%);
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .card-title {
+    color: hsl(220, 13%, 13%);
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-weight: 900;
+  }
+  .desc-text {
+    width: 90%;
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .price {
+    width: 330px;
+    color: hsl(220, 13%, 13%);
+    display: flex;
+    background-color: hsl(223, 64%, 98%);
+  }
+  .current-price {
+    color: hsl(219, 9%, 45%);
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .percent {
+    color: hsl(26, 100%, 55%);
+    font-size: 18px;
+    margin: 15px;
+  }
+  .caret-price-items {
+    color: hsl(220, 14%, 75%);
+    font-size: 16px;
+    float: right;
+    top: 48%;
+    right: 20px;
+    position: absolute;
+    text-decoration: line-through;
+  }
+  .counter {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    background-color: hsl(223, 64%, 98%);
+  }
+  .minus,
+  .plus {
+    border: none;
+    margin: 6px;
+    width: 35%;
+    background-color: hsl(223, 64%, 98%);
+  }
+  .counter-output {
+    margin: 5px;
+  }
+  .add {
+    margin: 0 auto;
+    bottom: 11%;
+    position: absolute;
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(
+      0deg,
+      hsl(26, 100%, 55%) 0%,
+      rgba(251, 75, 2, 1) 100%
+    );
+  }
 }
 @media screen and (max-width: 376px) {
   body {
-    width:100%;
-     }
+    width: 100%;
+  }
 }
